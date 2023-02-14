@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200;400&display=swap");
+html,
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+div.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 55%;
+  min-height: 30rem;
+}
+
+img {
+  max-width: 3rem;
+}
+
+div.sedans,
+div.suvs,
+div.luxury {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  justify-content: space-between;
+}
+
+div.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+div.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+div.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+button,
+html {
+  background-color: hsl(0, 0%, 95%);
+  color: ;
+}
+
+button {
+  border: none;
+  border-radius: 3rem;
+  min-height: 3rem;
+  width: 8rem;
+  margin-top: 3rem;
+  font-size: 1.05rem;
+}
+
+div > p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-top: 0;
+}
+
+p,
+button,
+footer {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+button.sedanBtn {
+  color: hsl(31, 77%, 52%);
+}
+
+button.suvBtn {
+  color: hsl(184, 100%, 22%);
+}
+
+button.luxuryBtn {
+  color: hsl(179, 100%, 13%);
+}
+
+/*footer*/
+
+footer {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 985px) {
+  div.container {
+    max-width: 90%;
+    margin: 5rem 2rem;
+    flex-direction: column;
+  }
+
+  div.sedans,
+  div.suvs,
+  div.luxury {
+    min-height: 23rem;
+  }
+  div.sedans {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.5rem;
+  }
+
+  div.luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  div > p {
+    font-size: 1.05rem;
+    line-height: 2rem;
+  }
+  button {
+    margin-top: 0.5rem;
+    width: 10rem;
+  }
+}
